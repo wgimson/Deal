@@ -1,0 +1,11 @@
+___________________________________README_______________________________________
+deal89.c deals a random hand of cards and prints the rank of suit of each. 
+Boolean values are simulated in the standard C89 way, i.e. and int typedef
+is made for 'bool', and 'true' and 'false' are defined in macros to be 1 and 2,
+respectively. A two-dimensional 'bool' array is then initialized to 'false', 
+and const char arrays rank_code and suit_code are initialized to represent the
+potential ranks and suits in a standard 52 card deck. The rand(), srand() and 
+time() functions of the standard C Library are used to generate random numbers,
+which are taken modulo both the number of ranks (13) and the number of suits
+(4), guaranteeing a random suit and rank when the resulting numbers are used as
+indices in rank_code and suit_code. A fun little bit of software to tinker with.
